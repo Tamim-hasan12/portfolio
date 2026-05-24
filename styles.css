@@ -1,0 +1,32 @@
+:root{
+  --bg:#f4f7fb;
+  --card:#fff;
+  --muted:#6b7280;
+  --accent:#ff6b1a;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);margin:0;color:#111}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 36px}
+.topbar .logo{font-weight:700}
+.nav a{margin-left:14px;text-decoration:none;color:var(--muted);padding:10px 14px;border-radius:10px}
+.nav a.active, .nav a:hover{background:#fff;color:#111}
+.container{display:flex;gap:32px;max-width:1100px;margin:24px auto;padding:24px}
+.sidebar{width:300px}
+.avatar{width:140px;height:140px;border-radius:12px;object-fit:cover;display:block;margin-bottom:12px}
+.name{margin:0;font-size:22px}
+.title{color:var(--muted);margin-top:6px}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(11,25,39,0.04);margin-top:16px}
+.contact-card p{margin:6px 0;color:var(--muted)}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),#ff8a4b);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;margin-top:10px}
+.btn-outline{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:10px 14px;border-radius:12px}
+.skills-card ul{padding-left:18px;margin:0}
+.content{flex:1}
+.panel{margin-bottom:20px}
+.contact-grid{display:flex;gap:18px}
+.contact-grid .large{flex:1}
+.bio{margin-top:18px}
+form label{display:block;margin-top:10px;color:var(--muted);font-size:14px}
+input,textarea{width:100%;padding:10px;border:1px solid #e6e9ef;border-radius:8px;margin-top:6px}
+.footer{text-align:center;padding:18px;color:var(--muted)}
+@media(max-width:900px){.container{flex-direction:column;padding:16px}.sidebar{width:100%}}

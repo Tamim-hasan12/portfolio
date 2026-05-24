@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Md. Tamim Hasan — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Tamim Hasan</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Work</a>
+      <a class="active" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <img src="assets/profile.jpg" alt="Tamim Hasan" class="avatar">
+      <h1 class="name">Md. Tamim Hasan</h1>
+      <p class="title">SQA / Software Tester</p>
+
+      <div class="social">
+        <a href="https://linkedin.com/in/tamim-hasan" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Tamim-hasan12" target="_blank">GitHub</a>
+      </div>
+
+      <div class="card contact-card">
+        <p><strong>Phone</strong><br>+8801886882851</p>
+        <p><strong>Email</strong><br>tamimhasanshad333@gmail.com</p>
+        <p><strong>Location</strong><br>Dhaka, Bangladesh</p>
+        <a class="btn" href="assets/Tamim10.pdf" download>Download Resume</a>
+      </div>
+
+      <div class="card skills-card">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Manual Testing, Test Cases</li>
+          <li>API Testing (Postman)</li>
+          <li>Playwright, Selenium</li>
+          <li>k6 (load testing)</li>
+          <li>Python, JavaScript, HTML, CSS</li>
+          <li>MySQL, Git, GitHub</li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="content">
+      <section id="contact" class="panel">
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+          <div class="contact-card large">
+            <h4>Phone</h4>
+            <p>+8801886882851</p>
+          </div>
+
+          <div class="contact-card large">
+            <h4>Email</h4>
+            <p>tamimhasanshad333@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="bio card">
+          <p>I am open to discussing new projects, QA roles, automation opportunities (Playwright), and load testing using k6. Feel free to reach out.</p>
+
+          <form id="contactForm" action="mailto:tamimhasanshad333@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-outline">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="projects" class="panel">
+        <h2>Projects</h2>
+        <div class="card">
+          <h3>PetsVet Website</h3>
+          <p>Built responsive UI using HTML & CSS. Created QA documentation: test cases and bug reports.</p>
+        </div>
+      </section>
+
+      <section id="resume" class="panel">
+        <h2>Resume</h2>
+        <div class="card">
+          <p>Download the full resume:</p>
+          <a class="btn" href="assets/Tamim10.pdf" download>Download Tamim10.pdf</a>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Md. Tamim Hasan — Dhaka, Bangladesh</p>
+  </footer>
+</body>
+</html>
